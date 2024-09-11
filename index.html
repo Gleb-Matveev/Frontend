@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="lab1, gleb, bio">
+        <meta name="description" content="Страница с информацией про меня (Матвеев Глеба)">
+        <!--<link rel="stylesheet" href="style.css">-->
+        <title>Gleb Matveev</title>
+        </head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a href="#bio">Bio</a>
+            <a href="#edu">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#graphics">Ну очень так себе графика</a>
+            <a href="#materials">Всякое полезное</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Bio</h2>
+                <p>Родился и вырос с Санкт-Петербурге. С 1 по 7 класс сменил две школы и три класса. После этого поступил 
+                    в <del>ПТУ</del> <ins>ГФМЛ 30</ins>, где благополучно закончил обучение в 2022 году. Затем поступил в 
+                    <ins>ИТМО</ins> где и по сей день учусь. Успел немножко покататься по миру, но не то чтобы очень много. 
+                    <b>Как выбирал дальнейший путь, в частности образование: <i>(там история конечно своеобразная, но если в кратце, то так)</i> В школе заинтересовался программированием, в результате год отходил на <i>спецкурс по компьютерной графике CGSG</i>. 
+                    Ушел так как понял, что не готов этим заниматься в качесвте карьеры, однако интерес к программированию остался в 
+                    связи с чем и поступил на ИСИТ.</b>
+                </p>
+                <aside><em>Очень</em> раздражает: когда люди громко чавкают, шумные и людные помещения, когда люди опаздывают</aside>
+            </article>
+            <article>
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>C++ (OpenGl). Школьный спецкурс по компьютерной графике (ComputerGraphicSupportGroup). 2019-2020.</strong>
+                        <ul>
+                        <li>
+                          <p>Занимался разработкой Z-buffers в пайплайне вывода. <ссылка> </p>
+                          </li>
+                          </ul>
+                    </li>
+                    <li>
+                        <strong>Node.js (WebGL). Летняя школьная практика 2020.</strong>
+                        <ul>
+                        <li>
+                          <p>Создал web игру авто-симулятор <ссылка> </p>
+                          </li>
+                          </ul>
+                    </li>
+                    <li>
+                        <strong>Kotlin. Летняя практика JetBrains 2021</strong>
+                        <ul>
+                        <li>
+                          <p>Создал android приложение expanse tracker. <ссылка> </p>
+                          </li>
+                          </ul>
+                    </li>
+                    <li>
+                        <strong>Прошел курс Mixbytes/ITMO по defi</strong>
+                        <ul>
+                        <li>
+                          <p>В рамках курса создал несколько проектов в качестве заданий <ссылка> </p>
+                          </li>
+                          </ul>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Projects</h2>
+            </article>
+            <article>
+                <h2>Skills</h2>
+                <h3>Hard skills:</h3>
+                <ol>
+                    <li>C/C++</li>
+                    <li>OpenGL</li>
+                    <li>C#</li>
+                    <li>java</li>
+                    <li>PostgreSQL</li>
+                </ol>
+                <h3>Soft skills:</h3>
+                <ol>
+                    <li>Английский (C1)</li>
+                    <li>Иврит (א)</li>
+                </ol>
+            </article>
+        </section>
+        <h3>Псевдографикой из символов ASCII</h3>
+        <pre>
+            ###### #    #   ##   #    # #####  #      ######
+            #       #  #   #  #  ##  ## #    # #      #      
+            #####    ##   #    # # ## # #    # #      ##### 
+            #        ##   ###### #    # #####  #      #      
+            #       #  #  #    # #    # #      #      #      
+            ###### #    # #    # #    # #      ###### ######
+        </pre> 
+        <h3>На всякий случай код быстрой сортировки:</h3>
+        <pre>
+            <code>
+            void QuickSort(int *a, int n)
+            {
+                static int x;
+                int b = 0, e = n - 1;
+
+                if (n < 2)
+                    return;
+
+                x = a[n / 2];
+
+                while(b <= e)
+                {  
+                    while (a[b] < x)
+                        b++;
+
+                    while (a[e] > x)
+                        e--;
+
+                    if (b <= e)
+                    {
+                        if (b != e)
+                            Swap(&a[b], &a[e]);
+                        b++;
+                        e--;
+                    }
+                }
+                QuickSort(a, e + 1);
+                QuickSort(a + b, n - b);
+            }   
+        </code>
+    </pre>
+    <h3>Quote: "Be curious, not judgmental" - (Not) Walt Whitman</h3>
+    <h3>Успех = много работы * талант (но так как тут не получается использовать необходимые тэги, то вот еще)</h3>
+    <h4>Хорошее настроение = хорошая_шутка<sub>про censored</sub> * хорошая_шутка<sub>тоже про censored</sub> * хорошая_шутка<sub>ну и про censored</sub> * люди<sub>которые шутку услышали и не обиделись</sub><sup>ну хотя бы 5</sup></h4>
+    </main>
+    <footer>
+        <p>Phone: 89216322376</p>
+        <p>Telegram: @mgkeda</p>
+    </footer>
+</body>
+</html>
