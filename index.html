@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="lab1, gleb, bio">
         <meta name="description" content="Страница с информацией про меня (Матвеев Глеба)">
-        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="style.css">
         <title>Gleb Matveev</title>
         </head>
 <body>
@@ -32,12 +32,13 @@
             </article>
             <article>
                 <h2>Education</h2>
-                <ul>
+                <ul>                    
                     <li>
                         <strong>C++ (OpenGl). Школьный спецкурс по компьютерной графике (ComputerGraphicSupportGroup). 2019-2020.</strong>
                         <ul>
                         <li>
                           <p>Занимался разработкой Z-buffers в пайплайне вывода. <ссылка> </p>
+                          <img src="tus.jpg">
                           </li>
                           </ul>
                     </li>
@@ -46,6 +47,7 @@
                         <ul>
                         <li>
                           <p>Создал web игру авто-симулятор <ссылка> </p>
+                          <img src="node.png">
                           </li>
                           </ul>
                     </li>
@@ -54,6 +56,7 @@
                         <ul>
                         <li>
                           <p>Создал android приложение expanse tracker. <ссылка> </p>
+                          <img src="jb.png">
                           </li>
                           </ul>
                     </li>
@@ -66,9 +69,6 @@
                           </ul>
                     </li>
                 </ul>
-            </article>
-            <article>
-                <h2>Projects</h2>
             </article>
             <article>
                 <h2>Skills</h2>
@@ -99,35 +99,33 @@
         <h3>На всякий случай код быстрой сортировки:</h3>
         <pre>
             <code>
-            void QuickSort(int *a, int n)
-            {
-                static int x;
-                int b = 0, e = n - 1;
+void QuickSort(int *a, int n)
+{
+  static int x;
+  int b = 0, e = n - 1;
 
-                if (n < 2)
-                    return;
+  if (n < 2)
+    return;
 
-                x = a[n / 2];
-
-                while(b <= e)
-                {  
-                    while (a[b] < x)
-                        b++;
-
-                    while (a[e] > x)
-                        e--;
-
-                    if (b <= e)
-                    {
-                        if (b != e)
-                            Swap(&a[b], &a[e]);
-                        b++;
-                        e--;
-                    }
-                }
-                QuickSort(a, e + 1);
-                QuickSort(a + b, n - b);
-            }   
+  x = a[n / 2];
+  while(b <= e)
+  {  
+    while (a[b] < x)
+      b++;
+    while (a[e] > x)
+      e--;
+    
+    if (b <= e)
+    {
+      if (b != e)
+        Swap(&a[b], &a[e]);
+      b++;
+      e--;
+    }
+  }
+  QuickSort(a, e + 1);
+  QuickSort(a + b, n - b);
+}   
         </code>
     </pre>
     <h3>Quote: "Be curious, not judgmental" - (Not) Walt Whitman</h3>
