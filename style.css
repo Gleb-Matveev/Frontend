@@ -73,13 +73,14 @@ pre {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #007BFF;
-    color: white;
+    background: black;
+    color: #00FFFF;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -131,7 +132,17 @@ h3 {
     margin-top: auto;
 }
 
-/**/
+@media screen and (max-width: 500px) {
+    .pre {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+    .fixed-image {
+        display: none;
+    }
+}
 
 .wrapper {
     border-style: solid;
@@ -154,3 +165,17 @@ h3 {
 {
   background: #ddd;
 }
+
+.fixed-image {
+    width:100%;
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:10;
+    margin:auto;
+  }
+
+  /*.ascii {
+    display: inline-block;
+  }*/
