@@ -132,17 +132,6 @@ h3 {
     margin-top: auto;
 }
 
-@media screen and (max-width: 500px) {
-    .pre {
-      display: none;
-    }
-  }
-
-@media screen and (max-width: 500px) {
-    .fixed-image {
-        display: none;
-    }
-}
 
 .wrapper {
     border-style: solid;
@@ -176,6 +165,11 @@ h3 {
     margin:auto;
   }
 
+@media screen and (max-width: 600px) {
+    .fixed-image {
+        display: none;
+    }
+}
   /*.ascii {
     display: inline-block;
   }*/
