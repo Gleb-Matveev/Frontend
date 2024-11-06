@@ -87,6 +87,11 @@ footer {
     margin-top: 20px;
 }
 
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
 h3 {
     margin: 15px 0;
     color: #007BFF;

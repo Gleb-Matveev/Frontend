@@ -8,3 +8,7 @@
         footer.textContent = 'Page load time: ' + loadTime.toFixed(2) + ' seconds';
     });
 })();
+
+function myFunction(url) {
+    window.location = url
+}
