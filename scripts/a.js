@@ -32,9 +32,16 @@ function generateTable(days, lessons, language) {
     const thead = document.createElement('thead');
     const tbody = document.createElement('tbody');
 
+    table.classList.add('ia');
+    thead.classList.add('ia');
+    tbody.classList.add('ia');
+
+
     const headerRow = document.createElement('tr');
+    headerRow.classList.add('ia');
     for (let i = 1; i <= days; i++) {
         const th = document.createElement('th');
+        th.classList.add('ia');
         th.textContent = `${language === 'ru' ? 'День' : 'Day'} ${i}`;
         headerRow.appendChild(th);
     }
@@ -42,8 +49,10 @@ function generateTable(days, lessons, language) {
 
     for (let i = 1; i <= lessons; i++) {
         const row = document.createElement('tr');
+        row.classList.add('ia');
         for (let j = 1; j <= days; j++) {
             const td = document.createElement('td');
+            td.classList.add('ia');
             td.textContent = `${language === 'ru' ? 'Занятие' : 'Lesson'} ${i}`;
             row.appendChild(td);
         }
