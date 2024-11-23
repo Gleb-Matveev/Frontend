@@ -175,6 +175,31 @@ h3 {
         display: none;
     }
 }
-  /*.ascii {
-    display: inline-block;
-  }*/
+
+
+/*css specificaly for interactive */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table.ia {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.ia, th.ia, td.ia {
+    border: 1px solid black;
+}
+
+th.ia, td.ia {
+    padding: 8px;
+    text-align: center;
+}
