@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="lab1, gleb, bio">
+        <meta name="description" content="Страница с информацией про меня (Матвеев Глеба)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">        
+        <script src="scripts/script.js"></script>
+        <title>Gleb Matveev</title>
+        </head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a onclick="myFunction('index.html')">Bio</a>
+            <a onclick="myFunction('education.html')">Education and skills</a>
+            <a onclick="myFunction('stuff.html')">Всякое</a>
+            <a onclick="myFunction('interactive.html')">Form</a>
+            <a class="active">Reviews</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Reviews</h1>
+        <div class="preloader"></div>
+        <div class="error-message">⚠ Что-то пошло не так...</div>
+        <ul class="comments"></ul>
+
+        <script src="scripts/load.js"></script>
+    </main>
+    <footer>
+        <div class="js_data">
+          <p id="time"></p>
+        </div>
+        <p>Phone: +7 921 632-23-76</p>
+        <p>Telegram: @mgkeda</p>
+        <img src="images/w15.jpg" class="fixed-image" >
+    </footer>
+</body>
+</html>
+

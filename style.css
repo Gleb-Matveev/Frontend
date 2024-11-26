@@ -177,7 +177,7 @@ h3 {
 }
 
 
-/*css specificaly for interactive */
+/* Interactive.html */
 
 .container {
     width: 80%;
@@ -202,4 +202,37 @@ table.ia, th.ia, td.ia {
 th.ia, td.ia {
     padding: 8px;
     text-align: center;
+}
+
+/* Reviews.html */
+
+.preloader {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+.comment {    
+    list-style-type: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
