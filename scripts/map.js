@@ -94,7 +94,7 @@ let visitedRoutes = JSON.parse(localStorage.getItem('visitedRoutes')) || [];
                 }
             });
 
-            map.events.add('click', function (e) {
+            map.events.add('singleclick', function (e) {
                 var coords = e.get('coords');
                 var balloonContent = "Определяем улицу по этим координатам: " + coords.join(", ");
 
