@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="lab1, gleb, bio">
+        <meta name="description" content="Страница с информацией про меня (Матвеев Глеба)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/script.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=e69448bc-09d8-4375-a5fb-942726925d03" type="text/javascript"></script>
+        <title>Gleb Matveev</title>
+        </head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a onclick="myFunction('index.html')">Bio</a>
+            <a onclick="myFunction('education.html')">Education and skills</a>
+            <a onclick="myFunction('stuff.html')">Всякое</a>            
+            <a onclick="myFunction('interactive.html')">Form</a>
+            <a onclick="myFunction('reviews.html')">Reviews</a>
+            <a class="active">Map</a>  
+        </nav>
+    </header>
+    <main>
+      <section>
+        <div id="map"></div>
+      </section>
+      
+      <script src="scripts/map.js"></script>
+    </main>
+<footer>
+  <div class="js_data">
+    <p id="time"></p>
+  </div>
+  <p>Phone: +7 921 632-23-76</p>
+  <p>Telegram: @mgkeda</p>
+  <img src="images/w15.jpg" class="fixed-image" >
+</footer>
+</body>
+</html>
